@@ -30,11 +30,11 @@
 <body>
   <div class="container">
     <ul class="menu">
-      <li><a href="#!/view1">Home</a></li>
-      <li><a href="#!/activities">Activities</a></li>
-      <li><a href="#!/view2">Expenses</a></li>
-      <li><a href="#!/view2">RollingAvgs</a></li>
-      <li><a href="#!/view2">Other</a></li>
+      <li><a href="#!/viewHome"><span class="glyphicon glyphicon-home"></span></a></li>       <!-- Home -->
+      <li><a href="#!/viewToDo"><span class="glyphicon glyphicon-list"></a></li>              <!-- To-Do/Planning -->
+      <li><a href="#!/viewActivities"><span class="glyphicon glyphicon-time"></span></a></li>  <!-- Activities/Time -->
+      <li><a href="#!/viewExpenses"><span class="glyphicon glyphicon-usd"></a></li>               <!-- Expenses -->
+      <li><a href="#!/viewStats"><span class="glyphicon glyphicon-stats"></a></li>             <!-- Stats/Graphs -->
     </ul>
   
     <!--[if lt IE 7]>
@@ -43,7 +43,7 @@
   
     <div ng-view></div>
   
-    <div>Angular seed app: v<span app-version></span></div>
+    <!-- <div>Angular seed app: v<span app-version></span></div> -->
   </div> <!-- Bootstrap container -->
 
   <!-- In production use:
@@ -52,9 +52,11 @@
   <script src="bower_components/angular/angular.js"></script>
   <script src="bower_components/angular-route/angular-route.js"></script>
   <script src="app.js"></script>
-  <script src="view1/view1.js"></script>
-  <script src="view2/view2.js"></script>
-  <script src="activities/activities.js"></script>
+  <script src="viewHome/viewHome.js"></script>
+  <script src="viewToDo/viewToDo.js"></script>
+  <script src="viewActivities/viewActivities.js"></script>
+  <script src="viewExpenses/viewExpenses.js"></script>
+  <script src="viewStats/viewStats.js"></script>
   <script src="components/version/version.js"></script>
   <script src="components/version/version-directive.js"></script>
   <script src="components/version/interpolate-filter.js"></script>
