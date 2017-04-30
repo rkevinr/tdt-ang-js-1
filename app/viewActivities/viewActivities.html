@@ -1,6 +1,9 @@
-<div ng-controller="ViewActivitiesCtrl as actvsCtrl"></div>
-    <p>This is the partial for the activities view.</p>
+<!-- <div ng-controller="ViewActivitiesCtrl as actvsCtrl"> -->
+<div ng-controller="ViewActivitiesCtrl">
+    <p>Activity:</p>
+    <textarea class="activity_descrip" ng-model="activity_str" autofocus></textarea>
+    <!-- NOTE:  do NOT qualify method with "$actvsCtrl" -->
     <p>
-        <button ng-click="doClick()">CLICK ME</button>
+        <button ng-click="doClick()" class="btn btn-primary btn-sm right_aligned">CLICK ME</button>
     </p>
 </div>

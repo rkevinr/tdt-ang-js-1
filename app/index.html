@@ -33,6 +33,9 @@
       <li><a href="#!/viewHome"><span class="glyphicon glyphicon-home"></span></a></li>       <!-- Home -->
       <li><a href="#!/viewToDo"><span class="glyphicon glyphicon-list"></a></li>              <!-- To-Do/Planning -->
       <li><a href="#!/viewActivities"><span class="glyphicon glyphicon-time"></span></a></li>  <!-- Activities/Time -->
+      <!--
+      <li><a href="#!/viewActivities/from/:fromDate/to/:toDate"><span class="glyphicon glyphicon-calendar"></span></a></li>
+      -->
       <li><a href="#!/viewExpenses"><span class="glyphicon glyphicon-usd"></a></li>               <!-- Expenses -->
       <li><a href="#!/viewStats"><span class="glyphicon glyphicon-stats"></a></li>             <!-- Stats/Graphs -->
     </ul>
@@ -46,6 +49,25 @@
     <!-- <div>Angular seed app: v<span app-version></span></div> -->
   </div> <!-- Bootstrap container -->
 
+  <!-- Firebase for BE use -->
+  <!-- <script src="https://www.gstatic.com/firebasejs/3.8.0/firebase.js"></script> -->
+  <script src="https://www.gstatic.com/firebasejs/3.8.0/firebase-app.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/3.8.0/firebase-auth.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/3.8.0/firebase-database.js"></script>  
+    
+  <script>
+    // Initialize Firebase
+    var config = {
+      apiKey: "AIzaSyBzsy_pQfGg_Fvy6CMsgUgsLTrUZgFOtoE",  // FIXME:  anonymize before GH repo "push"
+      authDomain: "tdt-be.firebaseapp.com",
+      databaseURL: "https://tdt-be.firebaseio.com",
+      projectId: "tdt-be",
+      storageBucket: "tdt-be.appspot.com",
+      messagingSenderId: "871498034160"
+    };
+    firebase.initializeApp(config);
+  </script>
+    
   <!-- In production use:
   <script src="//ajax.googleapis.com/ajax/libs/angularjs/x.x.x/angular.min.js"></script>
   -->
