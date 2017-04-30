@@ -1,7 +1,9 @@
+<div ng-controller="ViewExpensesCtrl as expensesCtrl">
 <p>This is the partial for the Expenses view.</p>
 <p>
-  Showing of 'interpolate' filter:
+  Expenses:
 </p>
 <ul>
-    <li> {{ 'Current version is v%VERSION%.' | interpolate }} </li>
+    <li>This URL is {{ expensesCtrl }}</li>
 </ul>
+</div>

@@ -51,7 +51,8 @@ angular.module('myApp.viewActivities', ['ngRoute'])
   function ViewActivitiesCtrl($route, $routeParams, $location, $scope) {
     
     // console.log("activsCtlr ctor called");
-
+    // console.log("actvsCtrl var/prop = " + $scope.actvsCtrl);
+    
     $scope.route = $route;
     $scope.location = $location;
     $scope.routeParams = $routeParams;

@@ -11,7 +11,12 @@ var myApp = angular.module('myApp', [
   'myApp.version'
 ]).
 config(['$locationProvider', '$routeProvider', function($locationProvider, $routeProvider) {
+  myApp.userIsLoggedIn = false;
   $locationProvider.hashPrefix('!');
-
   $routeProvider.otherwise({redirectTo: '/viewHome'});
-}]);
+}]).
+run(function($rootScope) {
+  $rootScope.doLogin = function() {
+      console.log("EMPTY login func called");
+  };
+});
